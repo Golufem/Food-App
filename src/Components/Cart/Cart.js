@@ -23,6 +23,12 @@ const cartItemRemoveHandler = (id) =>{
         console.log("I'm" )
 }
 
+const showorderHandlermi = ()=>{
+    props.onClose(); 
+    props.onShowOrder();
+
+}
+
 
 const cartItems = <ul 
 className={styles.cartSty}>
@@ -48,7 +54,7 @@ className={styles.cartSty}>
     </div>
         <div className={styles.actions}>
             <button onClick={props.onClose} className={styles.buttondel}>Close</button>
-            { hasItem &&  <button className={styles.button}>Order</button>}
+            { hasItem &&  <button className={styles.button} onClick = {showorderHandlermi}>Order</button>}
         </div>
     </Modal>
   );
