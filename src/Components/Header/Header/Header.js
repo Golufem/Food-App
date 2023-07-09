@@ -7,7 +7,7 @@ const Header = (props) => {
   return (
     <div>
       <div className={headerStyles.header}>
-            <header> Meal</header>
+            <header> Golufem Meal</header>
             <ButonHeader onShowCarthere = {props.onShowCart} />
       </div>
       <div className={headerStyles.image}>
